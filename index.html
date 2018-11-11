@@ -92,7 +92,7 @@
             login: function() {
                 console.log("login",this.id)
                 var xhttp = new XMLHttpRequest();
-                xhttp.open("POST", "http://35.243.231.211:3000/users/sessions", true);
+                xhttp.open("POST", "http://104.196.144.110:3000/users/sessions", true);
                 xhttp.setRequestHeader("Content-type", "application/json");
                 xhttp.setRequestHeader('Access-Control-Allow-Origin', '*');
                 xhttp.send(JSON.stringify({id:this.id}));
@@ -142,7 +142,7 @@
                     }
                 }
             };
-            xhttp.open("GET", "http://35.243.231.211:3000/users/session?id="+migApps.id, true);
+            xhttp.open("GET", "http://104.196.144.110:3000/users/session?id="+migApps.id, true);
             xhttp.send();
         }
 
