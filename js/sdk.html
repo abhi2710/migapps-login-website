@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang='eng'>
+    <head>
+    <script src="/assets/application.js"></script>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+<script>
+window['_fs_debug'] = false;
+window['_fs_run_in_iframe'] = true;
+window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'B7QC6';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+    if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+    g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+    o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+    y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+    g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};g.event=function(i,v){g('event',{n:i,p:v})};
+    g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+    g.consent=function(a){g("consent",!arguments.length||a)};
+    g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+    g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+</script>
+<style>
+* {
+    margin: 0;
+padding: 0;
+font-family: 'Lato'; }
+
+.dn {
+    display: none; }
+
+header {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #0386AA;
+    min-height: 45px;
+    display: block;
+    width: 100%; }
+header .website-name {
+    margin-left: 20px;
+    color: #ffffff;
+    line-height: 45px;
+    font-size: 20px;
+    font-weight: 300; }
+
+#exit_button {
+    float: right;
+    height: 15px;
+    margin-top: 15px;
+    margin-right: 20px;
+    cursor: pointer; }
+
+footer {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background: #D1D3D4;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0 10px; }
+footer img {
+    height: 20px; }
+
+#main_body {
+    background: #ffffff;
+    overflow: auto;
+    height: 530px; }
+
+.empty-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 4.5px;
+    background-color: #d8d8d8;
+    display: inline-block;
+    margin: 0 2px; }
+
+.filled-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 4.5px;
+    background-color: #6b6b6b;
+    display: inline-block;
+    margin: 0 2px; }
+</style>
+</head>
+<body>
+<header>
+<span class='website-name'>Swoop Dashboard</span>
+<img id="exit_button" src="/assets/exit.svg" alt="Exit" />
+    </header>
+    <div id='main_body'>
+    <div data-full-mailto='mailto:SwoopDashboard-63781@swooplogin.com?subject=Instructions&amp;body=Hello%20from%20Swoop%20Dashboard%21%0A%0ASend%20this%20email%20message%20to%20access%20your%20account.%20It%20is%20much%20more%20secure%20and%20much%20easier%20than%20a%20password.%0A%0ALife%20is%20better%20without%20passwords.%20%20We%20hope%20you%20enjoy%20the%20convenience.%0A%0AIf%20you%20still%20have%20questions%2C%20learn%20more%20about%20this%20amazing%20new%20technology%20that%27s%20eliminating%20passwords%20all%20over%20the%20internet%20at%3A%20https%3A%2F%2Fswoopnow.com%2F%0A%0AThanks%2C%0AThe%20Swoop%20Dashboard%20Team' data-mailto-random_id='63781' data-subscription-id='bd433309-d4e0-4b04-a4c1-f6eaa1a09210' id='iframe_channel'></div>
+    <div id='step-intro'>
+    <div class='tutorial' id='1'>
+    <div class='banner'>
+    <div class='wrap'>
+    <h2>No More Passwords!</h2>
+<p>You will send an email instead.</p>
+<p>It's so simple!</p>
+</div>
+</div>
+<div class='wrap'>
+    <ul class='intro'>
+    <li>
+    <span class='icon'>
+    <img src="/assets/safe.png" alt="Safe" />
+    </span>
+    <span class='desc'>State-of-the-art encryption</span>
+<div class='clear'></div>
+    </li>
+    <li>
+    <span class='icon'>
+    <img src="/assets/no-type.png" alt="No type" />
+    </span>
+    <span class='desc'>No typing required</span>
+<div class='clear'></div>
+    </li>
+    <li>
+    <span class='icon'>
+    <img src="/assets/happy_face.png" alt="Happy face" />
+    </span>
+    <span class='desc'>Get ready to be happy.</span>
+<div class='clear'></div>
+    </li>
+    </ul>
+    </div>
+    <div class='first_time dn' style='text-align: center;'>
+    <div class='next-button button' data-next='#step-tutorial-one'><span>Next ></span></div>
+</div>
+<div class='returning dn' style='text-align: center;margin-top: -20px;'>
+    <a class='returning_button button' data-provider='full_mailto' href='mailto:SwoopDashboard-63781@swooplogin.com?subject=Instructions&amp;body=Hello%20from%20Swoop%20Dashboard%21%0A%0ASend%20this%20email%20message%20to%20access%20your%20account.%20It%20is%20much%20more%20secure%20and%20much%20easier%20than%20a%20password.%0A%0ALife%20is%20better%20without%20passwords.%20%20We%20hope%20you%20enjoy%20the%20convenience.%0A%0AIf%20you%20still%20have%20questions%2C%20learn%20more%20about%20this%20amazing%20new%20technology%20that%27s%20eliminating%20passwords%20all%20over%20the%20internet%20at%3A%20https%3A%2F%2Fswoopnow.com%2F%0A%0AThanks%2C%0AThe%20Swoop%20Dashboard%20Team' target='_blank'><span> Log In With Email </span></a>
+<a class='returning_button button' data-provider='gmail' href='https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=SwoopDashboard-63781@swooplogin.com&amp;su=Instructions&amp;body=Hello%20from%20Swoop%20Dashboard%21%0A%0ASend%20this%20email%20message%20to%20access%20your%20account.%20It%20is%20much%20more%20secure%20and%20much%20easier%20than%20a%20password.%0A%0ALife%20is%20better%20without%20passwords.%20%20We%20hope%20you%20enjoy%20the%20convenience.%0A%0AIf%20you%20still%20have%20questions%2C%20learn%20more%20about%20this%20amazing%20new%20technology%20that%27s%20eliminating%20passwords%20all%20over%20the%20internet%20at%3A%20https%3A%2F%2Fswoopnow.com%2F%0A%0AThanks%2C%0AThe%20Swoop%20Dashboard%20Team' target='_blank'><span> Log In With Email </span></a>
+<a class='returning_button button' data-provider='yahoo' href='https://compose.mail.yahoo.com/?to=SwoopDashboard-63781@swooplogin.com&amp;subject=Instructions&amp;body=Hello%20from%20Swoop%20Dashboard%21%0A%0ASend%20this%20email%20message%20to%20access%20your%20account.%20It%20is%20much%20more%20secure%20and%20much%20easier%20than%20a%20password.%0A%0ALife%20is%20better%20without%20passwords.%20%20We%20hope%20you%20enjoy%20the%20convenience.%0A%0AIf%20you%20still%20have%20questions%2C%20learn%20more%20about%20this%20amazing%20new%20technology%20that%27s%20eliminating%20passwords%20all%20over%20the%20internet%20at%3A%20https%3A%2F%2Fswoopnow.com%2F%0A%0AThanks%2C%0AThe%20Swoop%20Dashboard%20Team' target='_blank'><span> Log In With Email </span></a>
+<a class='returning_button button' data-provider='aol' href='https://mail.aol.com/Mail/ComposeMessage.aspx?to=SwoopDashboard-63781@swooplogin.com&amp;subject=Instructions&amp;body=Hello%20from%20Swoop%20Dashboard%21%0A%0ASend%20this%20email%20message%20to%20access%20your%20account.%20It%20is%20much%20more%20secure%20and%20much%20easier%20than%20a%20password.%0A%0ALife%20is%20better%20without%20passwords.%20%20We%20hope%20you%20enjoy%20the%20convenience.%0A%0AIf%20you%20still%20have%20questions%2C%20learn%20more%20about%20this%20amazing%20new%20technology%20that%27s%20eliminating%20passwords%20all%20over%20the%20internet%20at%3A%20https%3A%2F%2Fswoopnow.com%2F%0A%0AThanks%2C%0AThe%20Swoop%20Dashboard%20Team' target='_blank'><span> Log In With Email </span></a>
+<a class='returning_button button' data-provider='outlook.com' href='https://mail.live.com/default.aspx?rru=compose&amp;subject=Instructions&amp;body=Hello%20from%20Swoop%20Dashboard%21%0A%0ASend%20this%20email%20message%20to%20access%20your%20account.%20It%20is%20much%20more%20secure%20and%20much%20easier%20than%20a%20password.%0A%0ALife%20is%20better%20without%20passwords.%20%20We%20hope%20you%20enjoy%20the%20convenience.%0A%0AIf%20you%20still%20have%20questions%2C%20learn%20more%20about%20this%20amazing%20new%20technology%20that%27s%20eliminating%20passwords%20all%20over%20the%20internet%20at%3A%20https%3A%2F%2Fswoopnow.com%2F%0A%0AThanks%2C%0AThe%20Swoop%20Dashboard%20Team&amp;to=SwoopDashboard-63781@swooplogin.com#page=Compose' target='_blank'><span> Log In With Email </span></a>
+<a class='returning_button button' data-provider='comcast' href='https://web.mail.comcast.net/zimbra/h/search?action=compose&amp;to=SwoopDashboard-63781@swooplogin.com&amp;subject=Instructions&amp;body=Hello%20from%20Swoop%20Dashboard%21%0A%0ASend%20this%20email%20message%20to%20access%20your%20account.%20It%20is%20much%20more%20secure%20and%20much%20easier%20than%20a%20password.%0A%0ALife%20is%20better%20without%20passwords.%20%20We%20hope%20you%20enjoy%20the%20convenience.%0A%0AIf%20you%20still%20have%20questions%2C%20learn%20more%20about%20this%20amazing%20new%20technology%20that%27s%20eliminating%20passwords%20all%20over%20the%20internet%20at%3A%20https%3A%2F%2Fswoopnow.com%2F%0A%0AThanks%2C%0AThe%20Swoop%20Dashboard%20Team' target='_blank'><span> Log In With Email </span></a>
+<div class='reset_settings'>(reset settings)</div>
+</div>
+<div class='magic-link'>Send me a login link instead</div>
+<div class='clear'></div>
+    </div>
+    <style>
+.content {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+
+.reset_settings {
+    cursor: pointer;
+    margin-top: 5px;
+    font-size: .8em; }
+
+.button.returning_button {
+    display: none; }
+
+.clear {
+    clear: both; }
+
+.dot-nav {
+    margin: 15px auto;
+    text-align: center; }
+
+.button {
+    background: #76BC21;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 1.8em;
+    cursor: pointer;
+    display: block;
+    text-decoration: none; }
+
+.button span {
+    display: block; }
+
+.button:hover span {
+    animation: wiggle .7s ease;
+    animation-iteration-count: 1; }
+
+@keyframes wiggle {
+    20% {
+        transform: translateX(1px); }
+    40% {
+        transform: translateX(-3px); }
+    60% {
+        transform: translateX(2px); }
+    80% {
+        transform: translateX(-2px); }
+    100% {
+        transform: translateX(0); } }
+.small-button {
+    background: #76BC21;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1em;
+    cursor: pointer;
+    text-transform: uppercase; }
+
+.wrap {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0; }
+
+.banner {
+    position: relative;
+    width: 100%;
+    background: #F2F2F2;
+    text-align: center;
+    margin-bottom: 20px; }
+.banner h2 {
+    font-size: 1.7em;
+    font-weight: 300;
+    margin-bottom: 10px; }
+.banner p {
+    margin: 0 auto;
+    line-height: 1.5em; }
+
+.banner:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -20px;
+    width: 0;
+    height: 0;
+    border-top: solid 20px #F2F2F2;
+    border-left: solid 20px transparent;
+    border-right: solid 20px transparent; }
+
+.intro {
+    width: 290px;
+    margin: 10px auto 0; }
+
+.intro img {
+    height: 40px; }
+
+.intro li {
+    margin-bottom: 21px;
+    clear: both;
+    list-style: none;
+    line-height: 37px; }
+
+span.icon {
+    float: left;
+    text-align: center;
+    width: 40px; }
+
+span.desc {
+    float: left;
+    text-align: left;
+    margin-left: 20px;
+    max-width: 220px;
+    font-size: 1.15em; }
+
+span.desc.small {
+    font-size: .8em;
+    font-style: italic; }
+
+.magic-link {
+    color: #888888;
+    text-decoration: underline;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin: 10px auto; }
+
+input[type='text'] {
+    margin: 0px auto 20px;
+    width: 80%;
+    font-size: 1.5em;
+    display: block;
+    border-style: solid;
+    padding: 3px;
+    border: 1px solid #888888; }
+</style>
+
+</div>
+<div id='step-tutorial-one'>
+    <div class='tutorial' id='tutorial-2'>
+    <div class='banner'>
+    <div class='wrap'>
+    <h2>How it works</h2>
+<p>1. Create Email</p>
+<p style='margin-top:-5px;'><span style='font-size: .8em'><em> (tap the login button)</em> </span></p>
+<p>2. Send Email</p>
+</div>
+</div>
+<div class='wrap' style='text-align: center;'>
+    <img style="height: 140px;" src="/assets/email.png" alt="Email" />
+    <div style='text-align: center; font-size: 18px; color: #6b6b6b; margin-top:20px;'><em>Don’t worry, there’s no typing!</em></div>
+</div>
+<div style='text-align: center;'>
+    <div class='next-button button' data-next='#step-provider-types'><span>Create Login Email ></span></div>
+</div>
+<div style='text-align:center; margin-top:20px; margin-bottom:20px;'>
+    <div class='magic-link'>Send me a login link instead</div>
+</div>
+<div class='clear'></div>
+    </div>
+
+    </div>
+    <div id='step-provider-types'>
+    <div class='tutorial provider-types'>
+    <div class='banner'>
+    <div class='wrap'>
+    <h2>Configuration</h2>
+    </div>
+    </div>
+    <div class='provider-type desktop-type'>
+    <a href='mailto:SwoopDashboard-63781@swooplogin.com?subject=Instructions&amp;body=Hello%20from%20Swoop%20Dashboard%21%0A%0ASend%20this%20email%20message%20to%20access%20your%20account.%20It%20is%20much%20more%20secure%20and%20much%20easier%20than%20a%20password.%0A%0ALife%20is%20better%20without%20passwords.%20%20We%20hope%20you%20enjoy%20the%20convenience.%0A%0AIf%20you%20still%20have%20questions%2C%20learn%20more%20about%20this%20amazing%20new%20technology%20that%27s%20eliminating%20passwords%20all%20over%20the%20internet%20at%3A%20https%3A%2F%2Fswoopnow.com%2F%0A%0AThanks%2C%0AThe%20Swoop%20Dashboard%20Team' target='_blank'>
+    <img src="/assets/laptop-mail-1" alt="Laptop mail 1" />
+    <p class='georgia center'>Click here if you download email to your computer</p>
+</a>
+</div>
+<div class='provider-type cloud-type'>
+    <img src="/assets/cloud-1" alt="Cloud 1" />
+    <p class='georgia center'>Click here if you<br />read email online</p>
+</div>
+<div class='clear' style='opadding-bottom:20px;'></div>
+    </div>
+    <style>
+.provider-type {
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    float: left;
+    text-align: center; }
+.provider-type img {
+    width: 50%; }
+.provider-type p {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #000000; }
+.provider-type a {
+    text-decoration: none; }
+</style>
+
+</div>
+<div id='step-email-providers'>
+    <div class='tutorial providers' id='2'>
+    <div class='banner'>
+    <div class='wrap'>
+    <h2>Configuration</h2>
+    <p>Choose your email priovider.</p>
+</div>
+</div>
+<div class='email-providers'>
+    <a class='email_provider' data-provider='gmail' href='https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=SwoopDashboard-63781@swooplogin.com&amp;su=Instructions&amp;body=Hello%20from%20Swoop%20Dashboard%21%0A%0ASend%20this%20email%20message%20to%20access%20your%20account.%20It%20is%20much%20more%20secure%20and%20much%20easier%20than%20a%20password.%0A%0ALife%20is%20better%20without%20passwords.%20%20We%20hope%20you%20enjoy%20the%20convenience.%0A%0AIf%20you%20still%20have%20questions%2C%20learn%20more%20about%20this%20amazing%20new%20technology%20that%27s%20eliminating%20passwords%20all%20over%20the%20internet%20at%3A%20https%3A%2F%2Fswoopnow.com%2F%0A%0AThanks%2C%0AThe%20Swoop%20Dashboard%20Team' target='_blank'>
+    <img src="/assets/web_email_clients/gmail_gray.png" alt="Gmail gray" />
+    </a>
+    <a class='email_provider' data-provider='yahoo' href='https://compose.mail.yahoo.com/?to=SwoopDashboard-63781@swooplogin.com&amp;subject=Instructions&amp;body=Hello%20from%20Swoop%20Dashboard%21%0A%0ASend%20this%20email%20message%20to%20access%20your%20account.%20It%20is%20much%20more%20secure%20and%20much%20easier%20than%20a%20password.%0A%0ALife%20is%20better%20without%20passwords.%20%20We%20hope%20you%20enjoy%20the%20convenience.%0A%0AIf%20you%20still%20have%20questions%2C%20learn%20more%20about%20this%20amazing%20new%20technology%20that%27s%20eliminating%20passwords%20all%20over%20the%20internet%20at%3A%20https%3A%2F%2Fswoopnow.com%2F%0A%0AThanks%2C%0AThe%20Swoop%20Dashboard%20Team' target='_blank'>
+    <img src="/assets/web_email_clients/yahoo_gray.png" alt="Yahoo gray" />
+    </a>
+    <a class='email_provider' data-provider='outlook.com' href='https://mail.live.com/default.aspx?rru=compose&amp;subject=Instructions&amp;body=Hello%20from%20Swoop%20Dashboard%21%0A%0ASend%20this%20email%20message%20to%20access%20your%20account.%20It%20is%20much%20more%20secure%20and%20much%20easier%20than%20a%20password.%0A%0ALife%20is%20better%20without%20passwords.%20%20We%20hope%20you%20enjoy%20the%20convenience.%0A%0AIf%20you%20still%20have%20questions%2C%20learn%20more%20about%20this%20amazing%20new%20technology%20that%27s%20eliminating%20passwords%20all%20over%20the%20internet%20at%3A%20https%3A%2F%2Fswoopnow.com%2F%0A%0AThanks%2C%0AThe%20Swoop%20Dashboard%20Team&amp;to=SwoopDashboard-63781@swooplogin.com#page=Compose' target='_blank'>
+    <img src="/assets/web_email_clients/outlook_online_gray.png" alt="Outlook online gray" />
+    </a>
+    <a class='email_provider' data-provider='comcast' href='https://web.mail.comcast.net/zimbra/h/search?action=compose&amp;to=SwoopDashboard-63781@swooplogin.com&amp;subject=Instructions&amp;body=Hello%20from%20Swoop%20Dashboard%21%0A%0ASend%20this%20email%20message%20to%20access%20your%20account.%20It%20is%20much%20more%20secure%20and%20much%20easier%20than%20a%20password.%0A%0ALife%20is%20better%20without%20passwords.%20%20We%20hope%20you%20enjoy%20the%20convenience.%0A%0AIf%20you%20still%20have%20questions%2C%20learn%20more%20about%20this%20amazing%20new%20technology%20that%27s%20eliminating%20passwords%20all%20over%20the%20internet%20at%3A%20https%3A%2F%2Fswoopnow.com%2F%0A%0AThanks%2C%0AThe%20Swoop%20Dashboard%20Team' target='_blank'>
+    <img src="/assets/web_email_clients/comcast_gray.png" alt="Comcast gray" />
+    </a>
+    <a class='email_provider' data-provider='aol' href='https://mail.aol.com/Mail/ComposeMessage.aspx?to=SwoopDashboard-63781@swooplogin.com&amp;subject=Instructions&amp;body=Hello%20from%20Swoop%20Dashboard%21%0A%0ASend%20this%20email%20message%20to%20access%20your%20account.%20It%20is%20much%20more%20secure%20and%20much%20easier%20than%20a%20password.%0A%0ALife%20is%20better%20without%20passwords.%20%20We%20hope%20you%20enjoy%20the%20convenience.%0A%0AIf%20you%20still%20have%20questions%2C%20learn%20more%20about%20this%20amazing%20new%20technology%20that%27s%20eliminating%20passwords%20all%20over%20the%20internet%20at%3A%20https%3A%2F%2Fswoopnow.com%2F%0A%0AThanks%2C%0AThe%20Swoop%20Dashboard%20Team' target='_blank'>
+    <img src="/assets/web_email_clients/aol_gray.png" alt="Aol gray" />
+    </a>
+    <div style='text-align:center; margin-top:20px;'>
+    <div class='magic-link'>Send me a login link instead</div>
+</div>
+</div>
+</div>
+<style>
+.email-providers {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center; }
+
+.email-providers a {
+    text-decoration: none; }
+.email-providers img {
+    width: 45%;
+    margin-bottom: 10px; }
+</style>
+
+</div>
+<div id='step-in-progress'>
+    <div id='in-progress'>
+    <div class='banner'>
+    <div class='wrap'>
+    <h2 style='line-height: 75px; font-size: 2em;'>Logging You In...</h2>
+</div>
+</div>
+<div class='wrap'>
+    <div style='text-align:center; margin-top:50px;'>
+    <img style="margin-top: -100px;" src="/assets/busy.svg" alt="Busy" />
+    </div>
+    <div style='text-align:center; margin-top:60px;'>
+    <div class='magic-link'>Send me a login link instead</div>
+</div>
+</div>
+</div>
+
+</div>
+<div id='step-two-factor-waiting'>
+    <div id='two-factor-waiting'>
+    <div class='banner'>
+    <div class='wrap'>
+    <h2 style='line-height: 75px; font-size: 2em;'>Logging You In...</h2>
+</div>
+</div>
+<div class='wrap'>
+    <div style='text-align:center; margin-top:50px;'>
+    <p>Please Check your phone for a confirmation link.</p>
+</div>
+</div>
+</div>
+
+</div>
+<div id='step-two-factor-config'>
+    <div class='tutorial'>
+    <div class='banner'>
+    <div class='wrap'>
+    <h2 style='line-height: 75px; font-size: 2em;'>Logging You In...</h2>
+</div>
+</div>
+<div class='wrap'>
+    <p style='margin-bottom: 20px; text-align: center;'>Secure your account with your mobile number.</p>
+<input id='sms-config-input' placeholder='+15051234567' style='border-radius: 5px;' type='text'>
+    <a class='button center is-medium is-success' href='#' id='sms-config-input-button' onClick='return false;'>Submit</a>
+    </div>
+    </div>
+    <script>
+    $('#sms-config-input-button').click(function(){
+        number = $('#sms-config-input').val();
+        App.iframe.two_factor_config(number)
+        close_all();
+        $('#step-two-factor-waiting').show()
+    });
+</script>
+
+</div>
+<div id='step-welcome-back'>
+    <div id='welcome-back'>
+    <div class='banner'>
+    <div class='wrap'>
+    <h2>Welcome!</h2>
+</div>
+</div>
+<div class='wrap' style='text-align:center;'>
+    <img style="height: 130px; margin-top:20px;" src="/assets/success.png" alt="Success" />
+    <p class='tc' style='font-size: 18px; line-height: 1.2; margin: 25px auto; '>You're logging in with your <span class='authenticated_email georgia i b'></span> email account.</p>
+</div>
+<a class='button' href='#' id='welcome-back-continue' onClick='return false;'><span>Continue ></span></a>
+<div style='text-align:center; margin-top:20px; margin-bottom:20px;'>
+    <div class='magic-link'>Wrong email? Send me a login link instead.</div>
+</div>
+<div class='clear'></div>
+    </div>
+
+    </div>
+    <div id='step-magic-link-form'>
+    <div class='tutorial' id='magic-link-form'>
+    <div class='banner'>
+    <div class='wrap'>
+    <p>Enter your email to receive a <br/ >secure login link</p>
+</div>
+</div>
+<div class='content'>
+    <div class='wrap'>
+    <div id='enter-email-input-end-of-tutorial'>
+    <input id='email-end-of-tutorial' placeholder='name@example.com' style='border-radius: 5px;' type='text'>
+    <a class='button center is-medium is-success' href='#' id='request-login-link-at-end-of-tutorial' onClick='return false;'>Send</a>
+    </div>
+    <div class='dn' id='enter-email-confirmation-end-of-tutorial'>
+    <div class='wrap'>
+    <p style='font-size:1.2em; text-align:center;'>Please check your email for a link to log in with your <span id='entered-email'></span> account.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<script>
+$(function() {
+    provider_type = localStorage.getItem('provider_type')
+    cloud_provider = localStorage.getItem('cloud_provider')
+    console.log('provider_type: ' + provider_type )
+    console.log('cloud_provider: ' + cloud_provider )
+    if(provider_type){
+
+        if(provider_type == 'desktop'){
+            $('.returning_button[data-provider="full_mailto"]').show();
+            $('.returning_button[data-provider="full_mailto"]').css('display', 'block');
+
+        }else{
+            $('.returning_button[data-provider="'+cloud_provider+'"]').show();
+            $('.returning_button[data-provider="'+cloud_provider+'"]').css('display', 'block');
+        }
+
+        $('.returning').fadeIn();
+    }else{
+        $('.first_time').fadeIn();
+    }
+    console.log('document_ready');
+    sendOffsetHeightToParentWindow();
+});
+
+setupModal();
+
+$('.reset_settings').click(function(){
+    localStorage.clear();
+    $('.returning').hide();
+    $('.first_time').fadeIn();
+    sendOffsetHeightToParentWindow();
+});
+
+
+$('.magic-link').click(function(e){
+    // mixpanel.track("Swoop.js Mobile: magic link");
+    close_all();
+    $('#step-magic-link-form').fadeIn();
+    sendOffsetHeightToParentWindow();
+});
+
+
+$('#request-login-link-at-end-of-tutorial').click(function() {
+    // mixpanel.track("Swoop.js Desktop: tutorial page four - request link");
+    $('#iframe_channel').attr('data-entered-email', $('#email-end-of-tutorial').val());
+    $('#entered-email').html($('#email-end-of-tutorial').val());
+    $('#enter-email-input-end-of-tutorial').hide();
+    $('#enter-email-confirmation-end-of-tutorial').fadeIn();
+    sendOffsetHeightToParentWindow();
+    App.iframe.request_login_link();
+});
+
+
+$('.cloud-type *').click(function(){
+    // mixpanel.track("Desktop: select cloud");
+    localStorage.setItem('provider_type', 'cloud');
+    close_all();
+    $('#step-email-providers').fadeIn();
+    sendOffsetHeightToParentWindow();
+});
+
+$('.desktop-type *').click(function(e){
+    // mixpanel.track("Desktop: select desktop");
+    localStorage.setItem('provider_type', 'desktop');
+    close_all();
+    $('#step-in-progress').fadeIn();
+    var offsetHeight = document.documentElement.offsetHeight;
+    window.parent.postMessage(360, '*');
+});
+
+
+$('#intro-button').click(function(){
+    // mixpanel.track("Desktop: intro-button click");
+    close_all();
+    $('#step-tutorial-one').fadeIn();
+    // $('#step-provider-types').fadeIn();
+    sendOffsetHeightToParentWindow();
+});
+
+$('.next-button').click(function(){
+    close_all();
+    next = $(this).data('next');
+    $(next).fadeIn();
+    sendOffsetHeightToParentWindow();
+});
+
+$('.skip').click(function(){
+    close_all();
+    $('#step-provider-types').fadeIn();
+    sendOffsetHeightToParentWindow();
+});
+
+$('.email_provider').click(function(){
+    // mixpanel.track("Desktop: select email provider");
+    provider = $(this).data('provider');
+    localStorage.setItem('cloud_provider', provider);
+    setTimeout("displayInProgress()", 2000);
+});
+
+$('.returning_button').click(function(){
+    setTimeout("displayInProgress()", 1000);
+});
+
+
+
+$('.other_provider').click(function(e){
+    // mixpanel.track("Desktop: select other email provider");
+    e.preventDefault();
+    $('.providers .other_wrap').fadeIn();
+    $(this).slideUp();
+    sendOffsetHeightToParentWindow();
+});
+
+$('#email-submit-2').click(function() {
+    // mixpanel.track("Desktop: other provider - request link");
+    $('#iframe_channel').attr('data-entered-email', $('#2-email').val());
+    App.iframe.request_login_link();
+    close_all();
+    $('#step-magic-link-sent').fadeIn();
+    sendOffsetHeightToParentWindow();
+});
+
+$('#request-login-link-at-in-progress').click(function() {
+    // mixpanel.track("Desktop: in-progress - request link");
+    $('#iframe_channel').attr('data-entered-email', $('#email-at-in-progress').val());
+    App.iframe.request_login_link();
+    close_all();
+    $('#step-magic-link-sent').fadeIn();
+    sendOffsetHeightToParentWindow();
+});
+
+$('#request-login-link-at-welcome-back').click(function() {
+    // mixpanel.track("Desktop: welcome back - request link");
+    $('#iframe_channel').attr('data-entered-email', $('#email-at-welcome').val());
+    App.iframe.request_login_link();
+    close_all();
+    $('#step-magic-link-sent').fadeIn();
+    sendOffsetHeightToParentWindow();
+});
+
+$('#welcome-back-continue').click(function() {
+    // mixpanel.track("Desktop: enter site");
+    window.top.location.href = $('#iframe_channel').attr('data-login-link');
+});
+
+$('#exit_button').click(function() {
+    // mixpanel.track("Desktop: close window");
+    close_all();
+    $('#step-intro').show();
+    sendOffsetHeightToParentWindow();
+    close_modal();
+});
+
+function setupModal() {
+    window.addEventListener('message', sendOffsetHeightToParentWindow, false);
+    close_all();
+    $('#step-intro').fadeIn();
+}
+
+function displayInProgress() {
+    close_all();
+    $('#step-in-progress').fadeIn();
+    // mixpanel.track("Desktop: show in-progress")
+    sendOffsetHeightToParentWindow();
+}
+
+function close_all() {
+    $("id[class*='step-'],div[id^='step-']").hide();
+}
+
+function close_modal() {
+    window.parent.postMessage('close', '*');
+}
+
+function sendOffsetHeightToParentWindow() {
+    var offsetHeight = document.documentElement.offsetHeight;
+    window.parent.postMessage(offsetHeight, '*');
+}
+
+function sendHeightToParentWindow(height) {
+    _height = parseInt(height)
+    window.parent.postMessage(_height, '*');
+}
+</script>
+
+</div>
+<footer>
+<img class='small_logo' src='https://app.swoopnow.com/assets/footer-logo'>
+    </footer>
+    </body>
+    </html>
